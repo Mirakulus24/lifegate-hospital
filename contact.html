@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Lifegate Specialist Hospital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary-purple: #4c256d; --accent-purple: #6c3b99; --whatsapp-green: #25d366; --light-bg: #f9f6fc; --text-dark: #2d2138; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; color: var(--text-dark); background-color: #ffffff; }
+        .navbar { background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(76, 37, 109, 0.1); }
+        .nav-link { color: var(--text-dark); font-weight: 600; padding: 0.5rem 1.2rem !important; }
+        .btn-nav { background-color: var(--primary-purple); color: white; font-weight: 600; border-radius: 8px; padding: 0.6rem 1.5rem; text-decoration: none; }
+        .page-header { padding: 140px 0 60px; background: linear-gradient(135deg, #4c256d 0%, #221033 100%); color: white; text-align: center; }
+        .section-padding { padding: 80px 0; }
+        .contact-channel-card { background: #ffffff; border: 1px solid rgba(76, 37, 109, 0.06); border-radius: 20px; padding: 2.5rem 2rem; text-align: center; transition: all 0.3s ease; }
+        .contact-channel-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(76, 37, 109, 0.08); }
+        .btn-contact-action { width: 100%; padding: 0.75rem 1.5rem; font-weight: 600; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; }
+        .btn-tel { background-color: var(--primary-purple); color: white; }
+        .btn-wa { background-color: var(--whatsapp-green); color: white; }
+        .btn-mail { background-color: #f8fafc; border: 1px solid #e2e8f0; color: var(--text-dark); }
+        .map-frame-wrapper { border-radius: 24px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.06); height: 450px; }
+        footer { background-color: #1a0b29; color: #ebdff5; padding: 40px 0 30px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="Lifegate.png" alt="Lifegate Logo" style="max-height: 50px;">
+                <span style="font-weight: 800; color: var(--primary-purple); font-size: 1.3rem;" class="ms-2">LIFEGATE</span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-nav" href="#" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Appointment</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Contact Our Desk</h1>
+            <p class="lead opacity-75">Open 24 Hours For Emergency and Specialized Care Coordination</p>
+        </div>
+    </header>
+
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="contact-channel-card">
+                        <div class="contact-icon-box mb-3 text-purple"><i class="fas fa-phone-alt display-6" style="color: var(--primary-purple);"></i></div>
+                        <h4 class="fw-bold mb-2">Voice Hotline</h4>
+                        <p class="text-muted small mb-4">Call our active operations line directly for emergency dispatches or general inquiries.</p>
+                        <a href="tel:07037906033" class="btn-contact-action btn-tel"><i class="fas fa-phone-alt"></i> Call 07037906033</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-channel-card">
+                        <div class="contact-icon-box mb-3 text-success"><i class="fab fa-whatsapp display-6"></i></div>
+                        <h4 class="fw-bold mb-2">WhatsApp Line</h4>
+                        <p class="text-muted small mb-4">Reach out to our clinical reception desk directly via text message for quick responses.</p>
+                        <a href="https://wa.me/2347037906033" target="_blank" class="btn-contact-action btn-wa"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-channel-card">
+                        <div class="contact-icon-box mb-3 text-secondary"><i class="fas fa-envelope display-6"></i></div>
+                        <h4 class="fw-bold mb-2">Official Email</h4>
+                        <p class="text-muted small mb-4">Send corporate claims, laboratory diagnostic inquiries, and reference letters.</p>
+                        <a href="mailto:Lifegatespecialisthospital@gmail.com" class="btn-contact-action btn-mail"><i class="fas fa-envelope"></i> Drop Email Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center g-5 pt-4">
+                <div class="col-lg-5">
+                    <span class="text-uppercase fw-bold small text-muted">Physical Facility</span>
+                    <h2 class="section-title mt-1 mb-4">Our Official Location</h2>
+                    <p class="text-secondary mb-4">Our clinical facilities and emergency emergency blocks are fully operational 24/7 out of our centralized headquarters complex in Lagos State.</p>
+                    
+                    <div class="d-flex align-items-start gap-3 mb-4">
+                        <div class="p-3 rounded-3 bg-light text-purple" style="color: var(--primary-purple);"><i class="fas fa-map-location-dot fs-4"></i></div>
+                        <div>
+                            <h5 class="fw-bold mb-1">HQ Address</h5>
+                            <p class="text-muted small mb-0">2B Abiodun Jagun Street, Ogba, Ikeja, Lagos, Nigeria.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="map-frame-wrapper">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=2B%20Abiodun%20Jagun%20Street,%20Ogba,%20Ikeja,%20Lagos&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center"><p class="mb-0 text-white-50 small">&copy; 2026 Lifegate Specialist Hospital Ltd. All rights reserved.</p></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
