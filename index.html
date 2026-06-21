@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifegate Specialist Hospital | 24-Hour Multidisciplinary Care</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-purple: #4c256d;
+            --accent-purple: #6c3b99;
+            --light-bg: #f9f6fc;
+            --text-dark: #2d2138;
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; color: var(--text-dark); background-color: #ffffff; overflow-x: hidden; }
+        .navbar { background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(76, 37, 109, 0.1); }
+        .navbar-brand img { max-height: 50px; object-fit: contain; }
+        .nav-link { color: var(--text-dark); font-weight: 600; padding: 0.5rem 1.2rem !important; }
+        .nav-link:hover, .nav-link.active { color: var(--primary-purple); }
+        .btn-nav { background-color: var(--primary-purple); color: white; font-weight: 600; border-radius: 8px; padding: 0.6rem 1.5rem; transition: var(--transition-smooth); text-decoration: none; }
+        .btn-nav:hover { background-color: var(--accent-purple); color: white; transform: translateY(-2px); }
+        .hero-section { padding: 160px 0 100px; background: linear-gradient(135deg, #ffffff 0%, #f4eefb 100%); }
+        .hero-tag { background-color: rgba(76, 37, 109, 0.1); color: var(--primary-purple); font-weight: 700; padding: 0.4rem 1rem; border-radius: 30px; display: inline-block; font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .hero-title { font-weight: 800; font-size: 3.5rem; color: var(--primary-purple); }
+        .hero-img { max-width: 100%; border-radius: 24px; box-shadow: 0 20px 40px rgba(76, 37, 109, 0.15); }
+        .section-padding { padding: 90px 0; }
+        .section-title { font-weight: 700; color: var(--primary-purple); }
+        .feature-card { background: white; border: 1px solid rgba(76, 37, 109, 0.08); border-radius: 16px; padding: 2.5rem 2rem; transition: var(--transition-smooth); height: 100%; }
+        .feature-card:hover { transform: translateY(-8px); border-color: var(--primary-purple); box-shadow: 0 15px 30px rgba(76, 37, 109, 0.1); }
+        .feature-icon { width: 60px; height: 60px; background-color: var(--light-bg); color: var(--primary-purple); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem; }
+        .hmo-badge { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1rem; font-weight: 600; text-align: center; color: var(--primary-purple); box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: var(--transition-smooth); }
+        .hmo-badge:hover { border-color: var(--primary-purple); background-color: var(--light-bg); transform: scale(1.05); }
+        .motto-banner { background: linear-gradient(135deg, var(--primary-purple) 0%, var(--accent-purple) 100%); color: white; border-radius: 24px; padding: 3.5rem; }
+        footer { background-color: #1a0b29; color: #ebdff5; padding: 80px 0 30px; }
+        footer a { color: #cbd5e1; text-decoration: none; }
+        footer a:hover { color: white; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="Lifegate.png" alt="Lifegate Logo" class="me-2">
+                <span style="font-weight: 800; color: var(--primary-purple); font-size: 1.3rem;">LIFEGATE</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-nav" href="#" data-bs-toggle="modal" data-bs-target="#bookingModal"><i class="fas fa-calendar-alt me-2"></i>Book Appointment</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="hero-tag"><i class="fas fa-award me-2"></i>Celebrating Over 20 Years of Excellence</span>
+                    <h1 class="hero-title mb-4">Your Gate to High-Quality, Affordable Healthcare</h1>
+                    <p class="lead mb-4 text-secondary">Incorporated in 2003, Lifegate Specialist Hospital Ltd delivers premium multidisciplinary care. Serving clinical excellence across Nigeria and into the diaspora.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-nav py-3 px-4">Book Appointment Online</a>
+                        <a href="tel:07037906033" class="btn btn-outline-dark py-3 px-4 rounded-3 fw-bold"><i class="fas fa-phone-alt me-2"></i>07037906033</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="Image4.jpg" alt="Lifegate Clinical Operations" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 text-center">
+                    <img src="Image.jpg" alt="Lifegate Certificate Banner" class="img-fluid rounded-4 shadow-sm" style="max-height: 420px;">
+                </div>
+                <div class="col-lg-7">
+                    <span class="text-uppercase fw-bold text-muted small">Established Legacy</span>
+                    <h2 class="section-title mt-1 mb-4">Reliable Healthcare Solutions for Over Two Decades</h2>
+                    <p class="text-secondary mb-4">Since opening our gates in 2003, Lifegate Specialist Hospital Ltd has been operational as a trusted multidisciplinary institution. We passionately engineer high-quality healthcare metrics at accessible, affordable rates, protecting domestic family brackets throughout local networks and international diaspora lines.</p>
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="p-2 rounded bg-light text-purple"><i class="fas fa-bolt text-warning fs-4"></i></div>
+                                <div><h6 class="fw-bold mb-0">Uninterrupted Power</h6><small class="text-muted">24/7 Continuous Care</small></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="p-2 rounded bg-light text-purple"><i class="fas fa-shield-halved text-success fs-4"></i></div>
+                                <div><h6 class="fw-bold mb-0">Dual State License</h6><small class="text-muted">Lagos & Anambra Accredited</small></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background-color: var(--light-bg);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Health Insurance Partners</h2>
+                <p class="text-secondary">We partner with prominent Health Management Organizations (HMOs) to provide seamless, cashless care options.</p>
+            </div>
+            <div class="row g-3 row-cols-2 row-cols-md-3 row-cols-lg-5">
+                <div class="col"><div class="hmo-badge">AXA Mansard</div></div>
+                <div class="col"><div class="hmo-badge">Leadway Health</div></div>
+                <div class="col"><div class="hmo-badge">Liberty Blue / THT</div></div>
+                <div class="col"><div class="hmo-badge">NEM Health</div></div>
+                <div class="col"><div class="hmo-badge">Veritas Health</div></div>
+                <div class="col"><div class="hmo-badge">Reliance HMO</div></div>
+                <div class="col"><div class="hmo-badge">Bastion HMO</div></div>
+                <div class="col"><div class="hmo-badge">Redcare HMO</div></div>
+                <div class="col"><div class="hmo-badge">Clearline HMO</div></div>
+                <div class="col"><div class="hmo-badge">Life Action Plus</div></div>
+            </div>
+            <div class="text-center mt-4 text-muted small italic">
+                <i class="fas fa-info-circle me-1"></i> Plus many additional corporate providers actively requesting connection to our health grid.
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <div class="motto-banner text-center">
+            <span class="text-uppercase tracking-wider opacity-75 fw-bold d-block mb-2">Our FoundationSlogan</span>
+            <h2 class="display-5 fw-bold mb-4">"We Open the Gate, GOD HEALS."</h2>
+            <p class="mx-auto mb-4 fs-5 opacity-90" style="max-width:600px;">Located at 2B Abiodun Jagun Street, Ogba, Ikeja. Our multidisciplinary desk remains open 24 hours every day to assist your family.</p>
+            <a href="tel:07037906033" class="btn btn-light px-4 py-3 fw-bold border-0" style="color: var(--primary-purple);"><i class="fas fa-phone-alt me-2"></i>Call Emergency Desk</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="Lifegate.png" alt="Lifegate Logo" class="me-2 bg-white rounded p-1" style="max-height: 40px;">
+                        <h4 class="text-white mb-0 fw-bold">Lifegate</h4>
+                    </div>
+                    <p class="small text-white-50">Providing absolute precision and professional healthcare metrics across infertility concerns, surgeries, and family health management lines since 2003.</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Quick Navigation</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="index.html">Home Overview</a></li>
+                        <li><a href="about.html">About Our Legacy</a></li>
+                        <li><a href="services.html">Clinical Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Contact Channels</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small text-white-50">
+                        <li><i class="fas fa-map-marker-alt me-2 text-white"></i>2B Abiodun Jagun Street, Ogba, Ikeja, Lagos.</li>
+                        <li><i class="fas fa-phone-alt me-2 text-white"></i>07037906033</li>
+                        <li><i class="fas fa-envelope me-2 text-white"></i>Lifegatespecialisthospital@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary opacity-20">
+            <p class="text-center text-white-50 small mb-0">&copy; 2026 Lifegate Specialist Hospital Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header border-0 pb-0" style="background-color: #f9f6fc;">
+                    <h5 class="modal-title fw-bold" style="color: #4c256d;"><i class="fas fa-calendar-check me-2"></i>Book Appointment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-3">
+                    <form id="appointmentForm">
+                        <div class="mb-3"><label class="form-label small fw-bold">Full Name</label><input type="text" id="patientName" class="form-control rounded-3" placeholder="John Doe" required></div>
+                        <div class="mb-3"><label class="form-label small fw-bold">Phone Number</label><input type="tel" id="patientPhone" class="form-control rounded-3" placeholder="07037906033" required></div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Select Medical Department</label>
+                            <select id="medicalService" class="form-select rounded-3" required>
+                                <option value="" disabled selected>Choose a service...</option>
+                                <option value="Obstetrics & Gynecology">Maternal: Obstetrics & Gynaecology</option>
+                                <option value="Specialized Surgeries">Specialized Surgeries (Fibroid removal/Myomectomy)</option>
+                                <option value="General Medicine / Surgery">General Medicine & Surgery</option>
+                                <option value="Family & Child Health">Family Planning & Pediatrics</option>
+                            </select>
+                        </div>
+                        <div class="mb-3"><label class="form-label small fw-bold">Preferred Date</label><input type="date" id="appointmentDate" class="form-control rounded-3" required></div>
+                        <button type="submit" class="btn w-100 fw-bold text-white py-2 rounded-3" style="background-color: #4c256d;">Submit Booking</button>
+                    </form>
+                    <div id="formSuccessMessage" class="alert alert-success mt-3 d-none rounded-3 small text-center"><i class="fas fa-check-circle me-1"></i> Booking successfully pushed to Lifegate Database!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+        import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+        const firebaseConfig = {
+            apiKey: "AIzaSyBmmYxUtTs5aAq0DnMRaR05Hcvi9ycO-p8",
+            authDomain: "lifegate-hospital.firebaseapp.com",
+            projectId: "lifegate-hospital",
+            storageBucket: "lifegate-hospital.firebasestorage.app",
+            messagingSenderId: "732048984527",
+            appId: "1:732048984527:web:d9060568fa328803f56aba",
+            measurementId: "G-FXNK2X3WWN"
+        };
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        document.getElementById('appointmentForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+            btn.disabled = true; btn.innerText = "Processing...";
+            try {
+                await addDoc(collection(db, "appointments"), {
+                    name: document.getElementById('patientName').value,
+                    phone: document.getElementById('patientPhone').value,
+                    service: document.getElementById('medicalService').value,
+                    date: document.getElementById('appointmentDate').value,
+                    createdAt: serverTimestamp()
+                });
+                document.getElementById('formSuccessMessage').classList.remove('d-none');
+                document.getElementById('appointmentForm').reset();
+                btn.innerText = "Submit Booking"; btn.disabled = false;
+                setTimeout(() => {
+                    bootstrap.Modal.getInstance(document.getElementById('bookingModal')).hide();
+                    document.getElementById('formSuccessMessage').classList.add('d-none');
+                }, 2500);
+            } catch (err) {
+                console.error(err); alert("Database save error. Call desk directly.");
+                btn.disabled = false; btn.innerText = "Submit Booking";
+            }
+        });
+    </script>
+</body>
+</html>
